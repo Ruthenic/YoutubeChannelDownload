@@ -1,5 +1,5 @@
 from youtube_api import YoutubeDataApi
-import os,json,subprocess,shutil
+import os,json,subprocess,shutil,argparse
 import youtube_dl
 video_ids = []
 with open('api_key.txt') as f:
@@ -8,6 +8,17 @@ yt = YoutubeDataApi(api_key)
 if not yt.verify_key():
     print("Invalid API key! Exiting...")
     exit()
+parser = argparse.ArgumentParser(description='Interactive tool to download all videos from a specific YouTube channel')
+parser.add_argument('-fsl', '--file-size-limit', help='Limit file size of downloaded videos.')
+args = parser.parse_args()
+print(args)
+dicargs = vars(parser.parse_args()) #haha dic... entertainment
+if args.file_size_limit is not None:
+    hasSetFilesize = True
+    filesizelimit = str(args.file_size_limit)
+else:
+    hasSetFilesize = False
+    filesizelimit = None
 channelName = input('What is the name of the channel you want to download? ')
 result = yt.search(channelName)[0]
 isCorrect = input("Is '" + result.get('channel_title') + "' with video title '" + result.get('video_title') +  "' the correct channel? ")
