@@ -1,0 +1,73 @@
+{
+    "brandingSettings": {
+        "channel": {
+            "country": "CA",
+            "defaultTab": "Featured",
+            "description": "Tech can be complicated; we try to make it easy.\n\nLinus Tech Tips is a passionate team of \"professionally curious\" experts in consumer technology and video production which aims to inform and educate people of all ages through entertaining videos. We create product reviews, step-by-step computer build guides, and a variety of other tech-focused projects.\n\nSchedule:\nNew videos every Saturday to Thursday @ 10:00am Pacific\nLive WAN Show podcasts every Friday @ 5:00pm Pacific\n\n",
+            "keywords": "Unboxing Review Computer Hardware Motherboard Intel AMD NVIDIA gaming",
+            "profileColor": "#000000",
+            "showBrowseView": true,
+            "showRelatedChannels": true,
+            "title": "Linus Tech Tips",
+            "trackingAnalyticsAccountId": "UA-129736315-1",
+            "unsubscribedTrailer": "u4dwmyS8Dl4"
+        },
+        "image": {
+            "bannerExternalUrl": "https://lh3.googleusercontent.com/NXaFVEkrkdGsQcjLvmI8iQuzKFVlZJX770IT4C77dmQr0PI5LpZuhATjJf2yWXYgBQP8EwVBgTk"
+        }
+    },
+    "contentDetails": {
+        "relatedPlaylists": {
+            "favorites": "FLXuqSBlHAE6Xw-yeJA0Tunw",
+            "likes": "",
+            "uploads": "UUXuqSBlHAE6Xw-yeJA0Tunw"
+        }
+    },
+    "etag": "7SuS2ztOqZKkCDTuAxy_NuOouCI",
+    "id": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+    "kind": "youtube#channel",
+    "snippet": {
+        "country": "CA",
+        "customUrl": "linustechtips",
+        "description": "Tech can be complicated; we try to make it easy.\n\nLinus Tech Tips is a passionate team of \"professionally curious\" experts in consumer technology and video production which aims to inform and educate people of all ages through entertaining videos. We create product reviews, step-by-step computer build guides, and a variety of other tech-focused projects.\n\nSchedule:\nNew videos every Saturday to Thursday @ 10:00am Pacific\nLive WAN Show podcasts every Friday @ 5:00pm Pacific\n\n",
+        "localized": {
+            "description": "Tech can be complicated; we try to make it easy.\n\nLinus Tech Tips is a passionate team of \"professionally curious\" experts in consumer technology and video production which aims to inform and educate people of all ages through entertaining videos. We create product reviews, step-by-step computer build guides, and a variety of other tech-focused projects.\n\nSchedule:\nNew videos every Saturday to Thursday @ 10:00am Pacific\nLive WAN Show podcasts every Friday @ 5:00pm Pacific\n\n",
+            "title": "Linus Tech Tips"
+        },
+        "publishedAt": "2008-11-25T00:46:52Z",
+        "thumbnails": {
+            "default": {
+                "height": 88,
+                "url": "https://yt3.ggpht.com/ytc/AAUvwngMoCZOFlIayfY36XYmXMFkvEfaX-U2om851XTxoA=s88-c-k-c0x00ffffff-no-rj",
+                "width": 88
+            },
+            "high": {
+                "height": 800,
+                "url": "https://yt3.ggpht.com/ytc/AAUvwngMoCZOFlIayfY36XYmXMFkvEfaX-U2om851XTxoA=s800-c-k-c0x00ffffff-no-rj",
+                "width": 800
+            },
+            "medium": {
+                "height": 240,
+                "url": "https://yt3.ggpht.com/ytc/AAUvwngMoCZOFlIayfY36XYmXMFkvEfaX-U2om851XTxoA=s240-c-k-c0x00ffffff-no-rj",
+                "width": 240
+            }
+        },
+        "title": "Linus Tech Tips"
+    },
+    "statistics": {
+        "hiddenSubscriberCount": false,
+        "subscriberCount": "12700000",
+        "videoCount": "5221",
+        "viewCount": "4394667666"
+    },
+    "topicDetails": {
+        "topicCategories": [
+            "https://en.wikipedia.org/wiki/Technology",
+            "https://en.wikipedia.org/wiki/Lifestyle_(sociology)"
+        ],
+        "topicIds": [
+            "/m/07c1v",
+            "/m/019_rr"
+        ]
+    }
+}
