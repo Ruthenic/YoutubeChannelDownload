@@ -9,7 +9,8 @@ if not yt.verify_key():
     print("Invalid API key! Exiting...")
     exit()
 parser = argparse.ArgumentParser(description='Interactive tool to download all videos from a specific YouTube channel')
-parser.add_argument('-fsl', '--file-size-limit', help='Limit file size of downloaded videos.')
+parser.add_argument('-fsl', '--file-size-limit', help='Limit file size of downloaded videos. Required input: "-fsl 75M"')
+parser.add_argument('-mrl', '--max-resolution', help='Specify a maximum resolution to download in. Required input: "-mrl 1080"')
 args = parser.parse_args()
 print(args)
 dicargs = vars(parser.parse_args()) #haha dic... entertainment
@@ -19,6 +20,12 @@ if args.file_size_limit is not None:
 else:
     hasSetFilesize = False
     filesizelimit = None
+if args.max_resolution is not None:
+    hasSetRes = True
+    maxreslimit = str(args.max_resolution)
+else:
+    hasSetRes = False
+    maxreslimit = None
 channelName = input('What is the name of the channel you want to download? ')
 result = yt.search(channelName)[0]
 isCorrect = input("Is '" + result.get('channel_title') + "' with video title '" + result.get('video_title') +  "' the correct channel? ")
@@ -43,7 +50,12 @@ for i in uploaded:
     video_ids.append(i.get('video_id'))
 wantsDownloads = input("Would you like to download all YouTube videos on this channel? [Y/N] ")
 if wantsDownloads.lower() == 'y':
-    ydl = youtube_dl.YoutubeDL({'outtmpl': channelId + '/%(title)s.%(ext)s'})
+    ydl_format = "mp4"
+    if hasSetFilesize == True:
+        ydl_format = ydl_format + '[filesize<=' + filesizelimit + ']'
+    if hasSetRes == True:
+        ydl_format = ydl_format + '[height<=' + maxreslimit + ']'
+    ydl = youtube_dl.YoutubeDL({'outtmpl': channelId + '/%(title)s.%(ext)s', 'format': ydl_format})
     print(video_ids)
     with ydl:
         ydl.download(video_ids)
